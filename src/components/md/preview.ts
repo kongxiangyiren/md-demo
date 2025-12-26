@@ -24,4 +24,13 @@ import '@kangc/v-md-editor/lib/plugins/copy-code/copy-code.css'
 
 VMdPreview.use(createCopyCodePlugin())
 
+import createTodoListPlugin from '@kangc/v-md-editor/lib/plugins/todo-list/index'
+import '@kangc/v-md-editor/lib/plugins/todo-list/todo-list.css'
+
+VMdPreview.use(createTodoListPlugin())
+
+import createKatexPlugin from '@kangc/v-md-editor/lib/plugins/katex/cdn'
+
+VMdPreview.use(createKatexPlugin())
+
 export default VMdPreview

@@ -1,3 +1,40 @@
+# 1
+
+::: tip
+dsa
+:::
+
+$$\sum_{i=1}^n a_i=0$$
+
+**粗体**
+_斜体_
+~~删除线~~
+
+> 引用
+
+- 无序列表
+
+1. 有序列表
+   1.1. 有序列表
+
+| column1  | column2  | column3  |
+| -------- | -------- | -------- |
+| content1 | content2 | content3 |
+
+- [x] xx
+
+[链接](http://)
+
+`code`
+
+![Description](./favicon.ico)
+
+## 2
+
+### 3
+
+#### 4
+
 ```vue
 <script setup lang="ts">
 import { ref } from 'vue'
