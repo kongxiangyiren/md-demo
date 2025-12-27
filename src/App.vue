@@ -220,7 +220,7 @@ watch(c, (newValue) => {
 })
 
 const leftToolbar =
-  'undo redo clear | h bold italic strikethrough quote | ul ol table hr | link image code | emoji todo-list | save'
+  'undo redo clear | h bold italic strikethrough quote | ul ol table hr | link image code | emoji todo-list tip | save'
 </script>
 
 <template>
