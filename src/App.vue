@@ -218,6 +218,9 @@ watch(c, (newValue) => {
     `${window.location.origin}${window.location.pathname}?zt=${zT.value}&ht=${hT.value}&c=${newValue}`,
   )
 })
+
+const leftToolbar =
+  'undo redo clear | h bold italic strikethrough quote | ul ol table hr | link image code | emoji todo-list | save'
 </script>
 
 <template>
@@ -247,6 +250,7 @@ watch(c, (newValue) => {
       "
       :codemirror-style-reset="c !== '' ? false : true"
       :include-level="[1, 2, 3, 4, 5, 6]"
+      :left-toolbar="leftToolbar"
       v-model="text"
       height="400px"
     ></v-md-editor>
@@ -256,6 +260,9 @@ watch(c, (newValue) => {
 </template>
 
 <style>
+/* .markdown-body {
+  padding-top: 20px;
+} */
 .v-md-pre-wrapper.copy-code-mode {
   position: relative;
 }

@@ -34,15 +34,26 @@ import 'codemirror/lib/codemirror.css'
 
 VueMarkdownEditor.Codemirror = Codemirror
 
+// emoji
+import createEmojiPlugin from '@/components/md/emoji/index'
+import mdEmojiPlugin from 'markdown-it-emoji'
+import emojiJson from '@/components/md/emoji/emoji.json'
+
 const hljsTheme = createHljsTheme({
   Hljs: hljs,
 })
 hljsTheme.extend((md: MakedownIt) => {
   // md为 markdown-it 实例，可以在此处进行修改配置,并使用 plugin 进行语法扩展
   // md.set(option).use(plugin);
+  // 设置自定义表情
+  mdEmojiPlugin(md, {
+    defs: emojiJson,
+  })
 })
 
 VueMarkdownEditor.vMdParser.theme(hljsTheme)
+
+VueMarkdownEditor.use(createEmojiPlugin())
 
 import createCopyCodePlugin from '@kangc/v-md-editor/lib/plugins/copy-code/index'
 import '@kangc/v-md-editor/lib/plugins/copy-code/copy-code.css'

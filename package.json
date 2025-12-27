@@ -23,6 +23,7 @@
     "@tsconfig/node24": "^24.0.3",
     "@types/codemirror": "^5.60.17",
     "@types/markdown-it": "^14.1.2",
+    "@types/markdown-it-emoji": "^1.4.0",
     "@types/node": "^24.10.1",
     "@vitejs/plugin-vue": "^6.0.2",
     "@vue/tsconfig": "^0.8.1",

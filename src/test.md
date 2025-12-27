@@ -46,14 +46,23 @@ const text = ref('')
 </template>
 
 <style>
+/** markdown顶部间距，v-green 和 vue-pro 主题请添加 */
+/* .markdown-body {
+  padding-top: 20px;
+} */
+
+/** 代码块复制按钮 */
 .v-md-pre-wrapper.copy-code-mode {
   position: relative;
 }
+/** 代码块复制按钮位置，请根据主题自行修改 */
 .v-md-pre-wrapper.copy-code-mode .v-md-copy-code-btn {
   top: 10px !important;
   right: 20px !important;
   z-index: 9 !important;
 }
+
+/** 代码块行号, 请根据主题自行修改 */
 /*
 .v-md-pre-wrapper.line-numbers-mode {
   position: relative;
